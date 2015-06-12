@@ -25,6 +25,7 @@ build: cabal.sandbox.config
 test: build
 	cabal run copilot-regression
 	cabal run copilot-c99-qc
+	copilot_unit_tests/struct_test1/run_test.sh
 
 .PHONY: veryclean
 veryclean:
