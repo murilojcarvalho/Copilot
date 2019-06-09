@@ -4,9 +4,9 @@
 
 #include "blink.h"
 
-uint8_t led_r_cpy;
-uint8_t led_b_cpy;
-uint8_t led_g_cpy;
+static uint8_t led_r_cpy;
+static uint8_t led_b_cpy;
+static uint8_t led_g_cpy;
 
 bool trigger_red_guard(void) {
   return (led_r_cpy) == (0);
